@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sabii Farms — Find Out What's Quietly Costing Your Farm Money</title>
+<meta name="description" content="A 2-minute farm check-up. Find out exactly what's holding your catfish farm back, and what to do about it." />
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1557249018970240');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1557249018970240&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --teal-dark:#0B3D33;
+    --teal:#14544A;
+    --gold:#D9A441;
+    --gold-dark:#B9822B;
+    --cream:#FBF7EF;
+    --cream-2:#F3ECDC;
+    --ink:#211D18;
+    --ink-soft:#524C42;
+    --line:#E4DCC9;
+    --good:#3F7D4C;
+    --radius:14px;
+    --shadow:0 8px 24px rgba(11,61,51,0.10);
+    --serif:Georgia,'Times New Roman',Times,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;}
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0 0 .5em;color:var(--teal-dark);}
+  .container{max-width:640px;margin:0 auto;padding:0 20px;}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold-dark);font-weight:700;margin-bottom:10px;
+  }
+  :focus-visible{outline:3px solid var(--gold-dark);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important;scroll-behavior:auto!important;} }
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    background:var(--teal-dark);color:#fff;text-align:center;font-size:13px;padding:9px 14px;
+    letter-spacing:.02em;
+  }
+
+  /* ---------- Hero / intro ---------- */
+  .hero{padding:36px 0 28px;text-align:center;}
+  .hero-headline{font-size:26px;line-height:1.3;font-weight:700;margin-bottom:14px;}
+  .hero-lead{color:var(--ink);font-size:16.5px;font-weight:600;max-width:480px;margin:0 auto 20px;line-height:1.5;}
+  .hero-image{max-width:300px;margin:0 auto 22px;}
+  .hero-image img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:14px;box-shadow:var(--shadow);-webkit-user-select:none;user-select:none;}
+  .hero-sub{color:var(--ink-soft);font-size:15.5px;font-weight:400;max-width:480px;margin:0 auto 22px;line-height:1.55;}
+  .hero-checklist{list-style:none;padding:0;margin:0 auto 26px;display:inline-flex;flex-direction:column;gap:8px;text-align:left;}
+  .hero-checklist li{font-size:15px;color:var(--ink);font-weight:600;}
+  .btn{
+    display:inline-block;background:var(--gold);color:var(--teal-dark);
+    font-weight:700;font-size:16px;padding:15px 26px;border-radius:10px;border:none;
+    cursor:pointer;box-shadow:var(--shadow);transition:transform .12s ease, background .12s ease;
+  }
+  .btn:hover{background:var(--gold-dark);transform:translateY(-1px);}
+  .btn:active{transform:translateY(0);}
+  .btn-block{width:100%;text-align:center;}
+
+  /* ---------- Quiz stage ---------- */
+  #quiz-wrap{padding:10px 0 60px;}
+  .progress-track{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:26px;}
+  .progress-fill{height:100%;background:var(--gold);transition:width .35s ease;}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 22px;box-shadow:var(--shadow);
+  }
+  .card .kicker{font-size:14px;color:var(--ink-soft);margin-bottom:6px;}
+  .card h2{font-size:21px;line-height:1.35;margin-bottom:16px;}
+  .card p.body-copy{font-size:16px;color:var(--ink-soft);margin-bottom:16px;}
+  .options{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+  .opt-btn{
+    text-align:left;background:var(--cream);border:1.5px solid var(--line);border-radius:10px;
+    padding:14px 16px;font-size:15.5px;color:var(--ink);cursor:pointer;transition:border-color .12s ease, background .12s ease;
+  }
+  .opt-btn:hover{border-color:var(--gold);background:#fff;}
+  .continue-row{margin-top:18px;text-align:center;}
+
+  /* ---------- Aha / permission emphasis ---------- */
+  .aha-card{background:var(--teal-dark);color:#fff;}
+  .aha-card h2{color:#fff;}
+  .aha-card p.body-copy{color:#E8E2D2;}
+  .note-card h2{font-size:19px;}
+  .note-body h3{font-family:var(--sans);font-size:16.5px;font-weight:800;color:var(--teal-dark);margin:20px 0 7px;}
+  .note-body p{font-size:15px;color:var(--ink-soft);margin:0 0 10px;font-weight:400;}
+  .note-body ul{margin:0 0 10px;padding-left:20px;}
+  .note-body li{font-size:15px;color:var(--ink-soft);margin-bottom:6px;font-weight:500;}
+  .note-body strong{color:var(--teal-dark);font-weight:700;}
+
+  /* ---------- Longform sections ---------- */
+  #longform{display:none;}
+  section.block{padding:46px 0;border-top:1px solid var(--line);}
+  section.block h2{font-size:24px;}
+  .stack-item{border:1px solid var(--line);background:#fff;border-radius:12px;padding:16px 18px;margin-bottom:14px;}
+  .stack-item h3{font-size:17px;margin-bottom:6px;color:var(--teal-dark);}
+  .stack-item p{margin:0;color:var(--ink-soft);font-size:15px;}
+  .module-card{border:1px solid var(--line);background:#fff;border-radius:12px;padding:18px 20px;margin-bottom:6px;}
+  .module-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;}
+  .module-card h3{font-size:17px;margin:0;color:var(--teal-dark);}
+  .module-value{font-size:13.5px;color:var(--gold-dark);font-weight:700;white-space:nowrap;}
+  .module-subtitle{font-style:italic;color:var(--ink-soft);font-size:13.5px;margin:2px 0 8px;}
+  .module-includes{font-size:11.5px;color:#9C927C;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em;}
+  .module-intro{font-size:15px;color:var(--ink-soft);margin:0 0 10px;}
+  .module-card ul.bullets{margin-bottom:6px;}
+  .module-note{font-size:13.5px;color:var(--ink-soft);font-style:italic;margin:10px 0 0;padding-top:8px;border-top:1px dashed var(--line);}
+  .module-bridge{font-size:14.5px;color:var(--teal-dark);font-style:italic;text-align:center;margin:16px 0 22px;}
+  .bullets{list-style:none;margin:0 0 8px;padding:0;}
+  .bullets li{position:relative;padding-left:26px;margin-bottom:10px;font-size:15.5px;}
+  .bullets li::before{content:"✔";position:absolute;left:0;color:var(--good);font-weight:700;}
+  .intro-includes{
+    background:var(--cream-2);border:1px dashed var(--gold-dark);border-radius:12px;padding:16px 18px;margin-bottom:22px;
+  }
+  .intro-includes h3{margin:0 0 8px;font-size:15px;color:var(--teal-dark);}
+  .intro-includes ul{margin:0;padding-left:20px;font-size:14.5px;color:var(--ink-soft);}
+  .price-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px;}
+  .price-table td{padding:9px 4px;border-bottom:1px solid var(--line);}
+  .price-table td:last-child{text-align:right;font-variant-numeric:tabular-nums;}
+  .price-table tr.total td{font-weight:700;color:var(--teal-dark);border-top:2px solid var(--teal-dark);border-bottom:none;}
+  .close-quote{border-left:3px solid var(--gold);padding-left:14px;font-style:italic;color:var(--ink-soft);margin:18px 0;}
+
+  /* ---------- Proof page ---------- */
+  .proof-item{margin-bottom:32px;}
+  .proof-tag{font-size:13px;color:var(--gold-dark);font-weight:700;letter-spacing:.03em;margin-bottom:8px;}
+  .proof-img-placeholder{
+    background:repeating-linear-gradient(45deg,#EFE8D6,#EFE8D6 10px,#F6F1E5 10px,#F6F1E5 20px);
+    border:1px solid var(--line);border-radius:10px;height:180px;
+    display:flex;align-items:center;justify-content:center;color:#9C927C;font-size:13px;margin-bottom:10px;
+  }
+  /* Zoomable media: never taller than the visible screen, never wider than
+     its card — so it always reads as "sized to the device", not a random
+     crop or an oversized slab. object-fit:contain keeps the whole page
+     legible instead of cropping it. */
+  .zoomable-img{
+    width:100%;max-height:62vh;object-fit:contain;display:block;
+    border:1px solid var(--line);border-radius:10px;margin-bottom:10px;
+    background:#F0E9D8;cursor:zoom-in;
+    -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;
+  }
+  .proof-item h3{font-size:17px;margin-bottom:4px;}
+  .proof-item p{margin:0;color:var(--ink-soft);font-size:15px;}
+
+  /* ---------- Back button (quiz screens) ---------- */
+  .screen-topbar{display:flex;align-items:center;margin-bottom:6px;}
+  .back-btn{
+    background:none;border:none;color:var(--ink-soft);font-size:13.5px;font-weight:600;
+    cursor:pointer;padding:4px 8px 4px 0;display:inline-flex;align-items:center;gap:4px;
+    opacity:.8;
+  }
+  .back-btn:hover{color:var(--teal-dark);opacity:1;text-decoration:underline;}
+
+  /* ---------- Testimonials ---------- */
+  .testi-group-label{font-size:14px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.05em;margin:26px 0 12px;}
+  .testi-subhead{font-size:16px;color:var(--ink);font-weight:600;margin:0 0 16px;}
+  .testi-media-card{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px;margin-bottom:12px;}
+  .testi-reset-line{text-align:center;color:var(--ink-soft);font-style:italic;font-size:14.5px;margin:22px 0;}
+  .testi-closing{text-align:center;color:var(--teal-dark);font-weight:700;font-size:16px;margin:28px 0 4px;line-height:1.5;}
+  .testi-video-label{font-size:12.5px;color:var(--gold-dark);font-weight:700;letter-spacing:.03em;margin:0 0 8px;text-transform:uppercase;}
+  /* Click-to-play video: shows a light, fast-loading poster frame first —
+     the actual video is only fetched once the visitor taps play, so it
+     never slows the page down or looks like an oversized black box. */
+  .video-thumb{
+    position:relative;border-radius:8px;overflow:hidden;cursor:pointer;background:#111;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .video-poster{
+    width:100%;max-height:56vh;object-fit:contain;display:block;background:#111;
+    -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;
+  }
+  .play-btn{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:52px;height:52px;border-radius:50%;background:rgba(11,61,51,0.85);color:#fff;
+    border:2px solid rgba(255,255,255,0.85);font-size:18px;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 14px rgba(0,0,0,0.35);pointer-events:none;
+  }
+  .testi-video-active{
+    width:100%;max-height:62vh;object-fit:contain;display:block;background:#111;border-radius:8px;
+  }
+
+  /* ---------- Lightbox (tap-to-zoom viewer) ---------- */
+  #lightbox{
+    position:fixed;inset:0;background:rgba(8,20,17,0.94);display:none;
+    align-items:center;justify-content:center;z-index:80;padding:16px;
+    touch-action:pinch-zoom;
+  }
+  #lightbox.open{display:flex;}
+  #lightbox img{
+    max-width:100%;max-height:100%;object-fit:contain;transition:transform .18s ease;
+    touch-action:pinch-zoom;-webkit-user-select:none;user-select:none;cursor:zoom-in;
+  }
+  #lightbox img.zoomed{transform:scale(2.1);cursor:zoom-out;}
+  .lightbox-close{
+    position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;
+    background:rgba(255,255,255,0.14);color:#fff;border:none;font-size:18px;cursor:pointer;z-index:2;
+  }
+  .lightbox-hint{
+    position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#E8E2D2;
+    font-size:12.5px;background:rgba(0,0,0,0.35);padding:6px 12px;border-radius:20px;
+  }
+
+  /* ---------- Guarantee / stamp ---------- */
+  .guarantee-box{background:var(--teal-dark);color:#fff;border-radius:16px;padding:30px 24px;}
+  .guarantee-box h2{color:#fff;}
+  .guarantee-box .body-copy{color:#E8E2D2;font-size:15.5px;}
+  .stamp{
+    width:104px;height:104px;flex-shrink:0;
+  }
+  .guarantee-top{display:flex;gap:16px;align-items:center;margin-bottom:14px;}
+  .guarantee-note{
+    margin-top:18px;background:rgba(255,255,255,0.08);border:1px dashed rgba(255,255,255,0.35);
+    border-radius:10px;padding:14px 16px;font-size:14px;color:#E8E2D2;
+  }
+
+  /* ---------- Price / CTA page ---------- */
+  .price-hero{text-align:center;}
+  .value-line{font-size:15px;color:var(--ink-soft);text-decoration:line-through;margin-bottom:2px;}
+  .today-price{font-family:var(--serif);font-size:44px;color:var(--teal-dark);font-weight:700;margin:2px 0 10px;}
+  .today-label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);font-weight:700;}
+  .urgency-box{background:#FDEDE4;border:1px solid #E9C4A9;border-radius:10px;padding:14px 16px;margin:20px 0;font-size:14.5px;}
+  .bank-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin:22px 0;}
+  .bank-row{display:flex;justify-content:space-between;align-items:center;font-size:15px;padding:6px 0;border-bottom:1px dashed var(--line);}
+  .bank-row:last-child{border-bottom:none;}
+  .copy-btn{background:var(--cream-2);border:1px solid var(--gold-dark);color:var(--teal-dark);
+    font-weight:600;font-size:13px;padding:6px 10px;border-radius:6px;cursor:pointer;}
+  .copy-btn.copied{background:var(--good);color:#fff;border-color:var(--good);}
+
+  /* ---------- Sticky bar ---------- */
+  #sticky-bar{
+    position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);
+    padding:12px 16px;box-shadow:0 -6px 18px rgba(0,0,0,0.08);display:none;z-index:40;
+  }
+  #sticky-bar .container{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0;}
+  #sticky-bar .sticky-price{font-size:13px;color:var(--ink-soft);}
+  #sticky-bar .sticky-price strong{color:var(--teal-dark);font-size:16px;}
+
+  /* ---------- Confirmation overlay ---------- */
+  #overlay{
+    position:fixed;inset:0;background:rgba(11,61,51,0.55);display:none;
+    align-items:center;justify-content:center;z-index:60;padding:20px;
+  }
+  #overlay .overlay-card{
+    background:#fff;border-radius:16px;padding:26px 22px;max-width:380px;width:100%;text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+  }
+  #overlay h3{font-size:19px;margin-bottom:10px;}
+  #overlay p{color:var(--ink-soft);font-size:15px;margin-bottom:20px;}
+
+  footer.site-footer{text-align:center;padding:30px 20px 90px;color:var(--ink-soft);font-size:13px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">Sabii Farms — Practical Catfish Farming Training</div>
+
+<!-- ===================== HERO / INTRO ===================== -->
+<div id="screen-hero" class="hero container">
+  <h1 class="hero-headline">💰 Discover What's Stopping Your Farm From Making More Money</h1>
+  <p class="hero-lead">Whether your problem is fish dying, slow growth, expensive feed, poor buyers, not enough capital, or something else, every farm has one or two things reducing how much money it makes.</p>
+
+  <div class="hero-image">
+    <img src="https://res.cloudinary.com/dmcurkcnk/image/upload/f_auto,q_auto,w_640,dpr_auto/v1781663636/FB_IMG_17129486227500586_lvwii5.jpg"
+      alt="Sabii Farms catfish farm" width="640" height="480" fetchpriority="high" decoding="async"
+      draggable="false" oncontextmenu="return false">
+  </div>
+
+  <p class="hero-sub">Answer a few simple questions and we'll show you where your own farm is losing money, one thing you can start doing differently today, and the next step to help you make more from your farm.</p>
+
+  <ul class="hero-checklist">
+    <li>✅ Results based on your own answers</li>
+    <li>✅ Learn one useful thing you can use immediately</li>
+    <li>⏱ Takes about 2 minutes</li>
+  </ul>
+
+  <button class="btn" id="start-btn">Start My Farm Profit Check-Up →</button>
+</div>
+
+<!-- ===================== QUIZ STAGE ===================== -->
+<div id="quiz-wrap" class="container" style="display:none;">
+  <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  <div class="card" id="quiz-card"></div>
+</div>
+
+<!-- ===================== LONGFORM (Offer → Proof → Testimonials → Guarantee → Price) ===================== -->
+<div id="longform">
+ <div id="longform-page1">
+
+  <!-- OFFER -->
+  <section class="block container" id="section-offer">
+    <span class="eyebrow">Your Program</span>
+    <h2 id="offer-headline">Here's exactly what's included for you.</h2>
+
+    <div class="intro-includes">
+      <h3>Your Registration Today Includes:</h3>
+      <ul>
+        <li>3-Day Live Online Training</li>
+        <li>5 Practical PDF Guides &amp; Reference Manuals</li>
+        <li>Lifetime Access to the Sabii Farmers Community (450+ farmers)</li>
+        <li>Live Q&amp;A Sessions</li>
+        <li>And much more…</li>
+      </ul>
+    </div>
+
+    <div id="offer-modules"></div>
+
+    <div class="module-card">
+      <h3>👥 Lifetime Access to Our Private WhatsApp Community (450+ Catfish Farmers)</h3>
+      <p>Ask questions whenever you need help, learn from other farmers' experiences, and keep improving long after the 3-day programme ends.</p>
+    </div>
+    <div class="module-card">
+      <h3>📚 5 Step-by-Step Guides You Can Save and Read on Your Phone Anytime</h3>
+      <p>No trying to remember everything from the live lectures — just open the guide, follow the steps, and come back to it whenever you need to.</p>
+    </div>
+
+  </section>
+
+  <!-- PROOF -->
+  <section class="block container" id="section-proof">
+    <span class="eyebrow">See For Yourself</span>
+    <h2>Here's A Small Glimpse Of What You'll Receive</h2>
+    <p class="body-copy" style="color:var(--ink-soft);margin-bottom:26px;">Everything you'll learn during the 3-day program is backed by practical reference guides you'll keep for life. Here's a small look inside a few of them.</p>
+
+    <div id="proof-items"></div>
+
+    <p class="body-copy" style="text-align:center;">And that's only a small sample… You'll receive all of these guides, the complete 3-day live training, and lifetime access to the Sabii Farmers Community when you register today.</p>
+
+    <button class="btn btn-block" id="cta-to-page2">👉 See Real Farmer Results + Full Program Pricing →</button>
+  </section>
+
+ </div>
+ <div id="longform-page2" style="display:none;">
+
+  <!-- TESTIMONIALS -->
+  <section class="block container" id="section-testimonials">
+    <span class="eyebrow">Real Farmers</span>
+    <h2>Don't Just Take Our Word For It</h2>
+    <p class="testi-subhead">Here's what other catfish farmers had to say after learning from Sabii Farms.</p>
+    <p class="body-copy">Every farmer's journey is different.<br>
+Some wanted to stop losing fish.<br>
+Some wanted their fish to grow better.<br>
+Some wanted to cut costs or find better buyers.<br>
+No matter where they started, they all had one thing in common:<br>
+They learned the right information and put it to work.</p>
+    <p class="body-copy">👇 Here are a few of their experiences.</p>
+
+    <div id="testi-groups"></div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="block container" id="section-guarantee">
+    <div class="guarantee-box">
+      <div class="guarantee-top">
+        <svg class="stamp" viewBox="0 0 120 120" role="img" aria-label="Guarantee seal">
+          <circle cx="60" cy="60" r="54" fill="none" stroke="#D9A441" stroke-width="3" stroke-dasharray="4 5"/>
+          <circle cx="60" cy="60" r="42" fill="none" stroke="#D9A441" stroke-width="2"/>
+          <path id="stampCircle" d="M 60,60 m -30,0 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0" fill="none"/>
+          <text font-size="8.4" fill="#D9A441" font-family="Georgia,serif" letter-spacing="2" font-weight="700">
+            <textPath href="#stampCircle" startOffset="2%">NO GUESSWORK · DOUBLE-BACK PROMISE ·</textPath>
+          </text>
+          <text x="60" y="57" text-anchor="middle" font-size="15" fill="#fff" font-family="Georgia,serif" font-weight="700">2X</text>
+          <text x="60" y="70" text-anchor="middle" font-size="7.5" fill="#E8E2D2" font-family="Georgia,serif">GUARANTEE</text>
+        </svg>
+        <h2 style="margin:0;">We're Willing To Take The Risk So You Don't Have To.</h2>
+      </div>
+      <p class="body-copy"><strong>Our Promise To You.</strong> We don't expect you to believe every claim on this page simply because we made it. Judge us by the results.</p>
+      <p class="body-copy">If you attend the full 3-day live program, study the guides, implement everything we teach that applies to your farm, and by your next production cycle you're unable to recover, save, or earn at least ₦100,000–₦200,000 more through the systems we've taught — reach back out to us. We'll personally review what you've implemented with you.</p>
+      <p class="body-copy">If you've genuinely followed the program in good faith and it has not delivered what we've promised, we'll pay you double your registration fee. That's how strongly we believe in what we're teaching.</p>
+      <div class="guarantee-note">
+        <strong>Important:</strong> this guarantee is only available to farmers who attend all three live lecture sessions — the live lectures contain explanations, demonstrations and guidance that go far beyond the guides alone. Before approving any claim, we'll review your attendance and go through your implementation with you.
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE / CTA -->
+  <section class="block container price-hero" id="section-price">
+    <span class="eyebrow">Everything Is Ready</span>
+    <h2>Will You Join Us?</h2>
+    <p class="body-copy">You've seen exactly what you'll be learning. You've seen how this program was built around the challenges you're currently facing. Now there's only one question left.</p>
+
+    <div class="stack-item" style="text-align:left;">
+      <h3>Sabii Farm Protection &amp; Profit Shield</h3>
+      <ul class="bullets">
+        <li>3-Day Live Practical Training</li>
+        <li>5 Practical Reference Guides</li>
+        <li>Lifetime Sabii Farmers Community</li>
+        <li>Live Q&amp;A Sessions</li>
+      </ul>
+    </div>
+
+    <table class="price-table" id="offer-price-table"></table>
+
+    <div class="value-line">Total Value: <span id="price-total-value">₦65,400</span></div>
+    <div class="today-label">Today Only</div>
+    <div class="today-price">₦5,400</div>
+    <p class="close-quote" id="offer-close"></p>
+
+    <h3 style="font-size:19px;margin:6px 0 4px;">Why We've Priced It At Just ₦5,400</h3>
+
+    <p class="body-copy" style="text-align:left;">We know many farmers genuinely want to do better, but don't always know who to trust. That's why we've packed everything we've learned into one practical 3-day programme — priced so every serious farmer can afford to start.</p>
+
+    <p class="body-copy" style="text-align:left;">Think about it… ₦5,400 is less than the value of just two table-size catfish. It's less than what many farmers lose from:</p>
+    <p class="body-copy" style="text-align:left;">
+      • Buying the wrong feed.<br>
+      • Overstocking a pond.<br>
+      • Treating the wrong disease.<br>
+      • Selling to the wrong buyer.<br>
+      • Or making just one avoidable mistake during a production cycle.
+    </p>
+    <p class="body-copy" style="text-align:left;">
+      <strong>The real question isn't whether this programme costs ₦5,400.</strong><br>
+      <strong>The real question is…</strong><br>
+      <strong>What could another production cycle of guesswork cost you?</strong>
+    </p>
+
+    <div class="urgency-box">
+      <strong>Registration Closes This Friday.</strong> Because this is a live 3-day programme, everyone starts together — we'll be teaching live, answering questions live, and discussing real farming situations together. Once registration closes, no new farmers will be added to this batch. Your place is only reserved after payment.
+    </div>
+
+    <p class="body-copy" style="text-align:center;font-weight:600;color:var(--teal-dark);">One good decision can change your next production cycle. This could be that decision.</p>
+
+    <button class="btn btn-block" id="cta-price">🟢 BOOK MY SLOT NOW — ₦5,400</button>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:10px;">Secure your place in less than 2 minutes. We'll guide you through registration on WhatsApp and answer any questions before the program begins.</p>
+
+    <div class="bank-box" style="text-align:left;">
+      <h3 style="font-size:15px;color:var(--teal-dark);margin:0 0 10px;">Prefer to pay right away by transfer?</h3>
+      <div class="bank-row"><span>Bank Name</span><strong>Zenith Bank</strong></div>
+      <div class="bank-row"><span>Account Number</span><strong id="acct-number">1310639463</strong> <button class="copy-btn" id="copy-acct">Copy</button></div>
+      <div class="bank-row"><span>Account Name</span><strong>SABII FARMS INCORPORATED</strong></div>
+      <p style="font-size:13px;color:var(--ink-soft);margin:10px 0 0;">Make the transfer, then tap "Book My Slot" above and send your payment receipt on WhatsApp along with your registration reference — we'll confirm your slot right away.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer container">Sabii Farms Incorporated · Ibadan, Nigeria</footer>
+ </div>
+</div>
+
+<!-- ===================== STICKY CTA BAR ===================== -->
+<div id="sticky-bar">
+  <div class="container">
+    <div class="sticky-price">Today only<br><strong>₦5,400</strong></div>
+    <button class="btn" id="cta-sticky">BOOK MY SLOT NOW</button>
+  </div>
+</div>
+
+<!-- ===================== ZOOM LIGHTBOX ===================== -->
+<div id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="" draggable="false" oncontextmenu="return false">
+  <div class="lightbox-hint">Tap image to zoom</div>
+</div>
+
+<!-- ===================== CONFIRMATION OVERLAY ===================== -->
+<div id="overlay">
+  <div class="overlay-card">
+    <h3>You're about to head to WhatsApp</h3>
+    <p>Tap confirm to open WhatsApp and secure your slot for ₦5,400. We'll walk you through the rest there.</p>
+    <button class="btn btn-block" id="overlay-confirm">Confirm — Open WhatsApp</button>
+    <p style="margin-top:14px;"><a href="#" id="overlay-cancel" style="font-size:13px;color:var(--ink-soft);text-decoration:underline;">Not now</a></p>
+  </div>
+</div>
+
+<script>
+/* =========================================================================
+   SABII FARMS — 3-DAY PROGRAM ASSESSMENT FUNNEL
+   Vanilla JS. No frameworks, no external requests except the Meta Pixel
+   script above and calls to your own Worker — kept deliberately lightweight.
+   ========================================================================= */
+
+// >>> UPDATE THIS to your deployed worker URL after running `wrangler deploy` <<<
+const WORKER_BASE = "https://sabii-3day-worker.YOUR_SUBDOMAIN.workers.dev";
+
+const WHATSAPP_NUMBER = "2348149182062";
+
+// ---------------------------------------------------------------------------
+// Branch content — every branch's diagnostic screens, aha, permission,
+// primary desire, unexpected opportunity, and price-table modules.
+// ---------------------------------------------------------------------------
+const BRANCHES = {
+  dying: {
+    totalValue: 65400,
+    screens: [
+      { header: "Sorry to hear that. Let's find out what's really happening.",
+        question: "When your fish start behaving strangely, what's usually the very first thing you do?",
+        options: ["I already know exactly what treatment to use","I ask another farmer for advice","I search online or in WhatsApp groups","I try one treatment and hope it works","I usually wait to see if it gets worse"] },
+      { header: "One more question…",
+        question: "How confident are you that, if your fish started dying tomorrow morning, you'd know exactly what to do before lunch?",
+        options: ["Completely confident","Fairly confident","Not very confident","I honestly wouldn't know where to start"] },
+      { header: "Let's look at something most farmers never calculate…",
+        question: "If you knew exactly what to do on the very first day of an outbreak, how much do you think you could have saved on your last one?",
+        options: ["Very little","Some money","A lot of money","I've honestly never thought about it"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>From your answers, it doesn't look like fish disease is your biggest problem.</p>
+<p>It looks like <strong>uncertainty.</strong></p>
+<p>When fish start dying, most farmers don't lose the most money because disease is impossible to stop.</p>
+<p>They lose it because they're not completely sure:</p>
+<ul><li>what changed</li><li>what they're looking at</li><li>what to do first</li><li>and whether the treatment they're using is even the right one</li></ul>
+<p>By the time many farmers feel confident enough to act, they've already lost fish they might have saved.</p>
+<p>👇 On the next page we'll show you the first thing experienced farmers look for before they even think about treatment.</p>` },
+    halfSolution: { title: "⚠️ Before You Treat Your Fish, Find This First.",
+      html: `<p>Few things are more painful than walking to your pond in the morning and finding dead fish floating.</p>
+<p>In that moment, most farmers ask one question: <strong>"Which medicine should I buy?"</strong></p>
+<p>But before you think about treatment... ask yourself something even more important.</p>
+<h3>"What changed?"</h3>
+<p>Fish rarely begin dying for no reason. If they've been healthy for days or even weeks and then suddenly start dying, <strong>something in the system usually changed</strong>. And until you identify that change, treatment alone may not solve the problem.</p>
+<h3>Start Your Investigation Here</h3>
+<p>When disease or sudden mortality appears, don't panic. Begin by checking these three areas.</p>
+<h3>💧 Your Water</h3>
+<p>Did anything change recently — a different water source, heavy rainfall, poor water quality, low oxygen? Your fish spend every second of their lives in water. <strong>Even small changes can put them under severe stress.</strong></p>
+<h3>🌾 Your Feed</h3>
+<p>Did you recently open a new bag, change feed brands, or notice the problem shortly afterwards? Sometimes <strong>the issue isn't the fish — it's what they're eating.</strong></p>
+<h3>🏞️ Your Pond Environment</h3>
+<p>Has anything around the pond changed — chemicals, waste buildup, poor water movement? Anything different from a few days ago deserves your attention.</p>
+<h3>Don't Treat The Symptoms While The Cause Remains</h3>
+<p>Imagine mopping a wet floor while someone is still pouring water onto it. That's what happens when we rush to medication without first removing the problem causing the disease. <strong>Finding the cause is the first step. Treating the disease is the second.</strong> Both matter.</p>
+<h3>But Here's Where Many Farmers Still Get Stuck…</h3>
+<p>Finding what changed is only half the job. The next question becomes:</p>
+<ul><li>What disease am I actually dealing with?</li><li>Which treatment should I use?</li><li>How much should I apply for my pond size?</li><li>How do I know the treatment is working?</li></ul>
+<p>Those are the questions that determine whether you stop the outbreak quickly, or keep losing fish while trying different products.</p>
+<p><strong>Over the years, we've seen many farmers get this first step right, but still lose fish because they didn't have clear answers to those next questions.</strong></p>
+<p><strong>That's why we decided to put together a complete programme that doesn't just show farmers how to investigate a disease outbreak, but also what to do once they've found the problem.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive the Fish Saver System, where you'll learn:</h3>
+<ul><li>How to identify the major diseases that affect catfish</li><li>The treatments commonly used for each one</li><li>The correct dosage based on your pond size</li><li>How to know whether your treatment is actually working</li></ul>
+<p>Because when disease strikes, <strong>every wrong decision can cost fish — and every right decision helps protect the money you've already invested.</strong></p>` },
+    offerModules: [
+      { icon:"🛡️", number:1, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The exact dosage for your pond","How to know if treatment is working","What to do within the first 24 hours"],
+        note:"Plus you'll receive the complete Fish Saver System PDF so you can always refer back whenever you need it.",
+        bridge:"But treating disease is only half the battle... the bigger question is how do you stop it from happening again? That's why you'll also receive…" },
+      { icon:"📘", number:2, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"Your Complete Farm Management System", value:15000,
+        bullets:["How many fish to stock for your pond","Which species to stock for your target harvest","Exactly how many bags of each feed size (2mm–9mm) to buy","When and how often to feed","When and how to change water","The key water quality checks every farmer should know","The records to keep so you can spot problems before they become expensive"],
+        note:"These are the everyday management decisions that help reduce stress on your fish, lower the chances of disease outbreaks, and keep your farm running profitably.",
+        bridge:"Once your fish are healthy and growing well, the next step is making sure you keep more of the money your farm earns. That's why you're also getting…" },
+      { icon:"💰", number:3, key:"buyerMastery", title:"Buyer & Sales Mastery Guide", subtitle:"Your Profit Growth Blueprint", value:20000,
+        bullets:["How to locate buyers willing to pay ₦100-200 more per kilogram","How to sell directly instead of depending entirely on middlemen","How to keep buyers coming back every harvest","How to create additional income around your farm between harvests"],
+        note:"Because healthy fish don't automatically mean a profitable farm. Knowing how to sell them properly does.",
+        bridge:"And because no farmer should have to figure everything out alone, you're also getting…" },
+    ],
+    modules: [["Fish Saver System",5400],["Farm Level Mastery Guide",15000],["Buyer & Sales Mastery Guide",20000],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "One disease outbreak can wipe out fish worth far more than ₦5,400. Treating the wrong disease with the wrong medication can cost more than ₦5,400 in wasted drugs alone. This program costs less than many farmers lose from one preventable mistake.",
+  },
+  growth: {
+    totalValue: 65400,
+    screens: [
+      { header: "Let's find out what's slowing your fish down.",
+        question: "When you look at your fish today, which statement feels most true?",
+        options: ["They're much smaller than I expected","They grow, but much slower than they should","Some grow well, others stay very small","I'm not really sure if they're growing normally"] },
+      { header: "Let's check one of the biggest decisions on any catfish farm.",
+        question: "How do you usually decide it's time to change from one feed size to the next?",
+        options: ["I follow a clear plan","I decide based on how the fish look","I ask the feed seller","I use whatever is available","I honestly just estimate"] },
+      { header: "Another important question…",
+        question: "When you stocked your pond, how did you decide how many fish to put in?",
+        options: ["I calculated it for my pond","I copied another farmer","I stocked as many as I could afford","I wasn't really sure"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>Your fish may not actually have a growth problem.</p>
+<p>They may have a <strong>management problem.</strong></p>
+<p>Slow growth rarely comes from one big mistake.</p>
+<p>It's usually several small ones that quietly slow your fish down every single day.</p>
+<p>The encouraging part is this: small improvements in feeding, water and stocking often create much bigger improvements in growth than most farmers expect.</p>
+<p>👇 On the next page we'll show you the first things to check before blaming your fish.</p>` },
+    halfSolution: { title: "🐟 If Your Fish Are Growing Slowly, Don't Blame The Feed Just Yet.",
+      html: `<p>One of the most common complaints among catfish farmers is: <strong>"My fish are just not growing well."</strong></p>
+<p>When that happens, many people immediately blame the feed. Sometimes they're right. But in reality, <strong>slow growth is usually caused by one — or a combination — of four key areas.</strong></p>
+<h3>Start By Checking These Four Things</h3>
+<h3>🌾 ① Your Feed</h3>
+<p>Are your fish getting enough feed for their stage of growth? Are you using the right pellet size? Is the feed giving you good performance for the money you're spending? <strong>Even good fish won't reach their potential if feeding isn't right.</strong></p>
+<h3>🐟 ② Your Fish</h3>
+<p>Not all fingerlings or juveniles have the same growth potential. The species and quality of the fish you stock can affect how quickly they reach harvest size. <strong>If the foundation is poor, growth often suffers from the very beginning.</strong></p>
+<h3>💧 ③ Your Water</h3>
+<p>Water is where your fish live every second of every day. Poor water quality, low oxygen, overcrowding, or irregular water management <strong>can stress your fish, reduce their appetite, and slow their growth.</strong></p>
+<h3>📏 ④ Your Stocking Density</h3>
+<p>Too many fish in one pond means more competition for feed and oxygen. Too few fish can also reduce the profitability of your pond. <strong>Getting the stocking density right is more important than many farmers realize.</strong></p>
+<h3>The Good News…</h3>
+<p>In many cases, slow growth isn't caused by one big problem. It's caused by one or two things that have quietly gone unnoticed. Once those are corrected, many farmers see their fish get back on track without starting all over again.</p>
+<h3>But Here's Where Many Farmers Still Struggle…</h3>
+<p>Knowing the four areas is one thing. Knowing exactly what to do is another. Questions like:</p>
+<ul><li>Which feed brand gives the best results without costing too much?</li><li>Exactly when should I move from 2mm to 3mm... then 4mm... then 6mm?</li><li>How many bags of each feed size will I actually need before harvest?</li><li>How many fish should my pond hold?</li><li>When exactly should I change water?</li><li>How many times should I feed every day?</li></ul>
+<p>Those are the decisions that quietly determine whether your fish reach harvest on time, or spend extra weeks eating into your profit.</p>
+<p><strong>Over the years, we've found that this is where many farmers need the most help. They understand the basics, but they're still left guessing the exact numbers and timing that make the biggest difference.</strong></p>
+<p><strong>That's why we put together a step-by-step programme to remove that guesswork and give farmers clear guidance they can follow from stocking to harvest.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive:</h3>
+<ul><li>Exactly how many bags of each feed size to buy from stocking to harvest</li><li>The feeding schedule to follow as your fish grow</li><li>The right stocking density for your pond</li><li>Practical water management routines that support healthy growth</li><li>How to avoid the common mistakes that quietly slow down growth and increase your production cost</li></ul>
+<p>Because faster-growing fish don't happen by luck — <strong>they grow from making the right decisions consistently.</strong></p>` },
+    offerModules: [
+      { icon:"📘", number:1, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"Your Complete Fish Growth & Farm Management System", value:15000,
+        bullets:["Exactly how many bags of 2mm, 3mm, 4mm, 6mm and 9mm feed you'll need from stocking to harvest","The best feed brands for every stage of growth","Exactly how many times a day to feed, and the best times to feed","The exact number of fish your pond should hold for faster, healthier growth","The right catfish species to stock based on your target harvest size","Exactly when and how to change water","The key water quality checks that directly affect growth","The records every farmer should keep to know whether their fish are truly progressing"],
+        note:"No more guessing. No more hoping. Just clear, practical numbers you can follow from stocking to harvest.",
+        bridge:"But fast-growing fish still need to stay healthy... that's why you'll also receive…" },
+      { icon:"🛡️", number:2, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The correct dosage for your pond","What to do within the first 24 hours","How to know whether your treatment is working"],
+        note:"Because one disease outbreak can undo months of good growth.",
+        bridge:"Healthy, fast-growing fish are only valuable when they sell well... that's why you'll also receive…" },
+      { icon:"💰", number:3, key:"buyerMastery", title:"Buyer & Sales Mastery Guide", subtitle:"Your Profit Growth System", value:20000,
+        bullets:["How to find buyers who pay ₦100-200 more per kilogram","How to reduce dependence on middlemen","How to build buyers who return every harvest","How to create additional income streams around your farm"],
+        note:"Growing bigger fish is important. Keeping more of the money they earn is even more important." },
+    ],
+    modules: [["Farm Level Mastery Guide",15000],["Fish Saver System",5400],["Buyer & Sales Mastery Guide",20000],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "Every extra week your fish stay in the pond means more feed, more water, more labour, more money spent before you can sell. That delay could easily cost far more than ₦5,400 in a single cycle.",
+  },
+  feed: {
+    totalValue: 80400,
+    screens: [
+      { header: "Let's talk about your biggest expense.",
+        question: "Roughly what percentage of your total production cost do you think goes into feed?",
+        options: ["Less than 50%","Around 50-60%","Around 70-80%","Honestly, I don't know"] },
+      { header: "When you buy feed, how do you normally decide which brand to buy?",
+        question: "",
+        options: ["Whatever the feed seller recommends","Whatever other farmers are buying","The cheapest one I can find","I already have a preferred brand"] },
+      { header: "One more question…",
+        question: "Before you stock fish, do you already know exactly how many bags of each feed size you'll need from start to harvest?",
+        options: ["Yes","I estimate","I buy as I go","I've never really planned it"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>Feed isn't just your biggest expense.</p>
+<p>It's also <strong>the biggest opportunity to increase profit.</strong></p>
+<p>Many farmers believe reducing feed cost simply means buying cheaper feed.</p>
+<p>In reality, the farmers who spend the least per kilogram of fish usually understand something different. They know where money is quietly being wasted.</p>
+<p>👇 On the next page we'll show you three practical ways many farmers immediately begin reducing feeding costs.</p>` },
+    halfSolution: { title: "💰 Feed Is Your Biggest Cost… Which Means It's Also Your Biggest Opportunity.",
+      html: `<p>On most catfish farms, feed accounts for 70-80% of the total cost of production. That sounds like bad news. But there's another way to look at it — <strong>because feed is your biggest expense, it's also the place where small improvements can make the biggest difference to your profit.</strong></p>
+<p><strong>The mistake many farmers make is believing the only way to reduce feed cost is to buy cheaper feed.</strong> In reality, buying cheaper feed can sometimes cost you even more if your fish grow slowly and require extra weeks — and extra bags — before harvest. There are several other ways to reduce feeding cost without hurting your farm's performance.</p>
+<h3>Here Are Three Practical Ways To Start</h3>
+<h3>🌾 ① Choose Feed Based On Profit, Not Price</h3>
+<p>Many farmers believe the most expensive feed must be the best. Others simply buy the cheapest one available. Both decisions can reduce your profit. Some premium feeds are excellent, but leave very little room for profit because of their price. Some cheaper feeds end up costing more because fish grow slowly and require more bags before harvest. <strong>The goal isn't to buy the cheapest feed — it's to find the balance between cost and performance.</strong></p>
+<h3>📦 ② Buy Smarter</h3>
+<p>Where you buy your feed also affects your profit. Buying one or two bags at a time from small retailers often means paying the highest prices. Whenever possible, buying from larger distributors, or partnering with nearby farmers to buy in bulk, can reduce your feeding cost over an entire production cycle. <strong>Small savings on every bag eventually become significant savings by harvest.</strong></p>
+<h3>🏭 ③ Consider Making Your Own Feed</h3>
+<p>This has been one of the biggest changes we've made on our own farm. When done properly, producing your own feed can significantly reduce feeding cost while still supporting good fish growth. But here's the important part: <strong>making feed without the right knowledge or formula can become more expensive than buying commercial feed.</strong> Done correctly, it saves money. Done wrongly, it can cost you both growth and profit.</p>
+<h3>But Here's What Many Farmers Still Don't Know…</h3>
+<p>Reducing feed cost isn't only about the feed itself. It's about making the right decisions <strong>before you spend the money.</strong> Questions like:</p>
+<ul><li>Which commercial feed brands give the best value for money?</li><li>Exactly how many bags of each pellet size will I need from stocking to harvest?</li><li>When should I move from 2mm to 3mm... then 4mm... then 6mm and 9mm?</li><li>How many times should I feed each day?</li><li>How do I reduce unnecessary feed waste?</li></ul>
+<p>Those small decisions quietly determine whether you save money — or spend more than you need to over an entire production cycle.</p>
+<p><strong>We've found that many farmers already know feed is expensive. What they often don't know is exactly where they can cut cost without slowing down growth.</strong></p>
+<p><strong>That's why we put together a practical programme that shows farmers where those savings come from, and how to apply them without sacrificing performance.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive:</h3>
+<ul><li>The commercial feed brands we recommend for different stages of growth</li><li>Exactly how many bags of each pellet size to buy from stocking to harvest</li><li>Feeding routines that reduce waste and improve feed efficiency</li><li>Three practical principles behind how we — and many other farmers — have significantly reduced feeding costs over the years</li></ul>
+<p><em>Please note: we won't be teaching our complete feed formula inside this programme. Farmers who want to produce their own feed can continue into our advanced Feed Formula Programme afterwards.</em></p>
+<p>Because increasing profit isn't always about producing more fish. Sometimes it's simply about <strong>keeping more of the money you're already spending.</strong></p>` },
+    offerModules: [
+      { icon:"💰", number:1, key:"feedProfit", title:"Feed Profit System", subtitle:"Your Practical Guide to Spending Less on Feed Without Sacrificing Growth", value:15000,
+        bullets:["The best-performing feed brands that give good growth without paying for the most expensive feed","Exactly how many bags of 2mm, 3mm, 4mm, 6mm and 9mm feed to buy from stocking to harvest","Exactly when to move from one feed size to the next","Exactly how many times a day to feed, and the best times to feed","The 3 biggest principles behind how we — and many other profitable farmers — have reduced feed costs by making our own feed"],
+        note:"Important: we won't be teaching our complete feed formulation or recipe inside this programme — that's covered in our advanced Feed Formula Programme. You'll leave this training understanding the key ideas that make feed cost reduction possible.",
+        bridge:"Saving money on feed is only one part of keeping costs low... you'll also receive…" },
+      { icon:"📘", number:2, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"Your Complete Farm Management System", value:15000,
+        bullets:["The correct stocking density for your pond","The best catfish species for your target harvest","Water management routines that help your fish stay healthy and convert feed efficiently","The important records every farmer should keep to monitor performance and reduce costly mistakes"],
+        note:"Because buying cheaper feed alone won't make you more profitable if you're still losing money through poor management.",
+        bridge:"And once you've reduced your production cost, the next step is increasing how much you earn from every kilogram you sell. That's why you'll also receive…" },
+      { icon:"💵", number:3, key:"buyerMastery", title:"Buyer & Sales Mastery Guide", subtitle:"Your Profit Growth System", value:20000,
+        bullets:["How to locate buyers paying ₦100-200 more per kilogram","How to reduce dependence on middlemen","How to keep buyers coming back every harvest","Additional ways your farm can generate income between harvests"],
+        note:"Reducing costs is only half of profitability. Increasing revenue completes the picture.",
+        bridge:"And because unexpected disease can wipe out all those savings, you'll also receive…" },
+      { icon:"🛡️", number:4, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The correct dosage for your pond","What to do within the first 24 hours","How to know whether your treatment is working"],
+        note:"Know exactly what to do when disease strikes instead of wasting money on trial-and-error treatments." },
+    ],
+    modules: [["Feed Profit System",15000],["Farm Level Mastery Guide",15000],["Buyer & Sales Mastery Guide",20000],["Fish Saver System",5400],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "If better feed planning saves you just one or two bags over a production cycle, you've already recovered the ₦5,400 you paid, several times over.",
+  },
+  buyers: {
+    totalValue: 80400,
+    screens: [
+      { header: "Let's talk about selling your fish.",
+        question: "When it's time to harvest, which of these feels most true?",
+        options: ["I usually sell to middlemen","I sell to market women","I sell to whoever comes first","I already have a few regular buyers"] },
+      { header: "Be honest…",
+        question: "Have you ever heard another farmer say they sold the same size fish for ₦100-200 more per kg than you did?",
+        options: ["Yes, many times","Once or twice","I've heard stories but don't know if they're true","No"] },
+      { header: "One more question…",
+        question: "When you sell your fish, which statement sounds more like you?",
+        options: ["I wait for buyers to contact me","I call the few buyers I already know","I actively look for new buyers before harvest","I usually don't know where else to sell"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>Your biggest challenge may not be your fish.</p>
+<p>It may simply be <strong>who you're selling to.</strong></p>
+<p>Many farmers believe middlemen decide the price. While they certainly influence it, they're often selling those same fish to buyers who are willing to pay considerably more.</p>
+<p>The question becomes: how do you reach those buyers yourself?</p>
+<p>👇 On the next page we'll show you three practical ways farmers can begin improving what they earn from every harvest.</p>` },
+    halfSolution: { title: "💰 Feel Like Buyers Are Pricing Your Fish Too Low?",
+      html: `<p>You're not alone. Many catfish farmers feel like once it's time to harvest, the buyer becomes the one deciding how much your fish is worth. And in some parts of Nigeria — including places like Lagos, Ogun and Oyo State — many farmers say they experience this even more because there are so many fish competing for the same buyers. It can be frustrating. So what can you actually do about it?</p>
+<h3>Here Are Three Practical Things To Consider</h3>
+<h3>① Raise The Size Your Market Wants</h3>
+<p>Not every market prefers the same size of fish. Some areas buy smaller table-size fish much faster. Others are willing to pay more for bigger fish. If you're producing a size that your local market doesn't demand, buyers naturally have more power to negotiate your price down. <strong>Understanding what your market prefers is just as important as raising healthy fish.</strong></p>
+<h3>② Compare More Than One Buyer</h3>
+<p>Not every middleman pays the same. Some buyers consistently pay ₦50-₦100 more per kilogram than others. That difference might not sound like much, until you multiply it across an entire harvest. However, be careful — some buyers offering higher prices may delay payment or fail to pay completely. <strong>A slightly lower price from a trustworthy buyer is often better than chasing a higher price you never receive.</strong></p>
+<h3>③ Don't Depend Only On Middlemen</h3>
+<p>Middlemen have an important role to play. The challenge is when they're your only option. They have their place, but remember: they're also selling your fish to someone else. That means there are buyers further down the chain who are willing to pay more. Depending on your production capacity, those buyers could include hotels, restaurants, smokehouses, barbecue sellers, event caterers, and pepper soup joints. <strong>The closer you are to the final customer, the more room there is for you to keep the profit instead of giving it away.</strong></p>
+<h3>But Here's What Many Farmers Still Struggle With…</h3>
+<p>Knowing these buyers exist, and <strong>actually selling to them consistently</strong>, are two completely different things. Questions like:</p>
+<ul><li>Which buyers should I approach first?</li><li>How do I convince them to buy from me instead of another farmer?</li><li>How do I keep them coming back every harvest?</li><li>How do I avoid being forced back to middlemen every time?</li></ul>
+<p>Those are the questions that determine whether you simply accept the price you're offered — or gradually build the freedom to negotiate from a stronger position.</p>
+<p><strong>Over the years, we've met many farmers who already knew hotels, restaurants and smokehouses existed. Their biggest challenge wasn't knowing these buyers were out there — it was knowing how to find them, approach them, and turn them into repeat customers.</strong></p>
+<p><strong>That's why we put together a practical programme to help farmers move beyond relying on whoever shows up at harvest time and start building more buying options for themselves.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive:</h3>
+<ul><li>The types of buyers that often pay more than traditional middlemen</li><li>Practical ways to approach and build relationships with them</li><li>How to create repeat buyers instead of starting from scratch every harvest</li><li>Practical ways to reduce feeding costs and manage your farm more efficiently, so you keep more of what you earn</li></ul>
+<p>Because finding one better buyer can improve one harvest. <strong>Building a system that brings buyers back can improve every harvest that follows.</strong></p>` },
+    offerModules: [
+      { icon:"💰", number:1, key:"buyerMastery", title:"Buyer & Sales Mastery Guide", subtitle:"Your Direct Buyer & Profit Growth System", value:20000,
+        bullets:["How to find buyers willing to pay ₦100-200 more per kilogram than many middlemen","The buyers to target — hotels, restaurants, pepper soup joints, barbecue sellers, smokehouses, caterers, event vendors","How to build buyers that keep coming back every harvest","Other value chains around catfish farming that can bring additional income into your farm"],
+        note:"One better buyer can change one harvest. A reliable system for finding buyers can change every harvest after that.",
+        bridge:"Selling for more is one side of profitability. Keeping more of what you earn is the other. That's why you'll also receive…" },
+      { icon:"💵", number:2, key:"feedProfit", title:"Feed Profit System", subtitle:"Your Practical Guide to Lower Feeding Costs", value:15000,
+        bullets:["Better-value commercial feed brands that balance cost and performance","Exactly how many bags of each feed size to buy","The correct time to change feed sizes","Feeding routines that help reduce unnecessary waste","The 3 key principles behind how we — and many other farmers — have reduced feed costs over the years"],
+        note:"Please note: we won't be teaching our complete feed formulation inside this programme — that's covered in our advanced Feed Formula Programme.",
+        bridge:"And once you're making and keeping more money, you need to make sure your farm isn't quietly losing it elsewhere. That's why you'll also receive…" },
+      { icon:"📘", number:3, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"Your Complete Farm Management System", value:15000,
+        bullets:["Proper stocking density for your pond","Water management routines","Feeding schedules","The right species selection","The records that help you measure performance and catch problems early"],
+        note:"Better management helps you protect the money you've worked hard to earn.",
+        bridge:"And because one disease outbreak can wipe out months of profit, you'll also receive…" },
+      { icon:"🛡️", number:4, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The correct dosage for your pond","What to do within the first 24 hours","How to know whether your treatment is working"],
+        note:"Know exactly what to do if disease strikes, including treatments, dosages and emergency response." },
+    ],
+    modules: [["Buyer & Sales Mastery Guide",20000],["Feed Profit System",15000],["Farm Level Mastery Guide",15000],["Fish Saver System",5400],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "If you're selling 1 tonne of fish, getting just ₦100 more per kg means ₦100,000 more from the same harvest. You didn't dig another pond. You didn't buy more feed. You simply sold better.",
+  },
+  capital: {
+    totalValue: 80400,
+    screens: [
+      { header: "Let's talk about capital.",
+        question: "If you had enough money today, what would you do first?",
+        options: ["Stock more fish","Build more ponds","Buy more feed","Expand my farm in general"] },
+      { header: "Be honest…",
+        question: "Which of these have you seriously considered or tried to grow your farm?",
+        options: ["Government grants","Bank or private loans","Looking for an investor","Borrowing from family or friends","Waiting until I save enough myself"] },
+      { header: "Thinking about those options…",
+        question: "Which statement feels closest to your experience?",
+        options: ["I got the help I needed","I tried but it didn't work out","I'm still waiting","I haven't had any real opportunity yet"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>Capital is important. There's no denying that. Every farmer wishes they had more money to grow their farm.</p>
+<p>But something interesting happens when you study farmers who keep expanding.</p>
+<p>They don't only focus on finding more money. <strong>They also become much better at making their existing farm generate and keep more money.</strong></p>
+<p>👇 On the next page we'll show you the two biggest ways many farmers try to grow their capital — and the third approach many overlook.</p>` },
+    halfSolution: { title: "💰 Feel Like The Only Thing Holding Your Farm Back Is Capital?",
+      html: `<p>For many farmers, this is exactly where they arrive. You've learnt how to raise fish. You understand the basics. Now you're thinking: <strong>"If I just had more money, I could finally grow this farm."</strong> The truth is, more capital does help. No one can deny that. But before more money comes in, there are a few things worth thinking about.</p>
+<h3>Here Are Three Ways Farmers Usually Try To Grow Their Capital</h3>
+<h3>① Grow What You Already Have</h3>
+<p>Many farmers harvest, take all the money out, then start the next cycle with exactly the same capital. Sometimes that's unavoidable — life happens. But whenever you can, <strong>allowing part of your profit to stay inside the farm gives it room to grow from one cycle to the next.</strong></p>
+<h3>② Use Other People's Money</h3>
+<p>Many farmers look towards government grants, agricultural loans, investors, cooperative societies, friends and family. There's nothing wrong with exploring these opportunities. But in today's Nigeria, <strong>many take months. Some never happen.</strong> Others come with conditions that make them difficult to depend on. If they come, that's great. But what if they don't?</p>
+<h3>③ Help Your Farm Generate More Money</h3>
+<p>This is the option many farmers never seriously consider. Instead of waiting for someone else to grow your farm, ask: <strong>"How can my farm bring in more money by itself?"</strong> Sometimes that means selling to buyers who pay more. Sometimes it means reducing your biggest expenses. Sometimes it means creating additional income around your farm instead of depending only on harvest. The stronger your farm becomes at generating cash, the less dependent it becomes on outside help.</p>
+<h3>Here's The Part Most Farmers Miss…</h3>
+<p>More capital can absolutely help a farm grow. But there's another question that's just as important.</p>
+<p><strong>If more money came into your farm today... would more of it stay in your farm?</strong></p>
+<p>Or would some of it quietly disappear through:</p>
+<ul><li>Higher feeding costs than necessary?</li><li>Selling below the best price available?</li><li>Avoidable management mistakes?</li><li>Losses that could have been prevented?</li></ul>
+<p>That's why many experienced farmers focus on two things at the same time:</p>
+<p><strong>Bringing more money into the farm... and helping the farm keep more of the money it already earns.</strong></p>
+<p>When both improve together, growth becomes much easier to sustain.</p>
+<p><strong>Over the years, we've found that the strongest farms don't simply rely on outside capital. They've also built systems that help the farm generate, protect and retain more money every production cycle.</strong></p>
+<p><strong>That's why we put together a practical programme that doesn't just focus on raising fish — it also shows farmers practical ways to strengthen the business side of their farm.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive:</h3>
+<ul><li>Practical ways to generate additional income around your catfish farm</li><li>How to find buyers who pay more for the fish you're already producing</li><li>Ways to reduce your biggest production cost — feed</li><li>The management systems that help you keep more of every naira your farm earns instead of quietly losing it</li></ul>
+<p>Because growing a farm isn't only about finding more capital. <strong>It's also about making sure every naira that enters your farm has the chance to create even more value.</strong></p>` },
+    offerModules: [
+      { icon:"💰", number:1, key:"growCapital", title:"How to Grow Your Farm Without Waiting for Loans or Investors", subtitle:"How to Grow Your Farm Without Waiting on Loans, Grants or Investors", value:20000,
+        bullets:["How to create additional income around your catfish farm using opportunities many farmers overlook","How to identify buyers willing to pay ₦100-200 more per kilogram","How to build repeat buyers who return every harvest"],
+        note:"The quickest way to increase capital isn't always producing more fish — sometimes it's earning more from the fish you're already producing.",
+        bridge:"Growing a farm isn't only about bringing in more money. It's also about keeping more of the money you already make. That's why you'll also receive…" },
+      { icon:"💵", number:2, key:"feedProfit", title:"Feed Profit System", subtitle:"Your Practical Guide to Lower Feeding Costs", value:15000,
+        bullets:["Better-value commercial feed brands","Exactly how many bags of each feed size to buy","Proper feed transition timing","Feeding routines that reduce unnecessary waste","The 3 principles behind how we — and many successful farmers — have significantly reduced feed costs"],
+        note:"Please note: we won't be teaching our complete feed formula inside this programme — farmers who want to produce their own feed can continue into our advanced Feed Formula Programme afterwards.",
+        bridge:"Bringing more money in and reducing costs is powerful, but you also need to stop the silent leaks inside your farm. That's why you'll also receive…" },
+      { icon:"📘", number:3, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"Your Complete Farm Management System", value:15000,
+        bullets:["The right stocking density for your pond","Water management routines","Feeding schedules","The right fish species for your goals","The key farm records that show where money is quietly being lost"],
+        note:"Small management mistakes repeated over months often cost more than farmers realize.",
+        bridge:"And because one disease outbreak can wipe out the capital you've worked so hard to build, you'll also receive…" },
+      { icon:"🛡️", number:4, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The correct dosage for your pond","What to do within the first 24 hours","How to know whether your treatment is working"],
+        note:"Protecting your fish means protecting the money already invested in them." },
+    ],
+    modules: [["How to Grow Your Farm Without Waiting for Loans or Investors",20000],["Feed Profit System",15000],["Farm Level Mastery Guide",15000],["Fish Saver System",5400],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "More capital is valuable. But imagine receiving a grant or loan without first knowing how to keep your biggest cost under control, sell to better-paying buyers, generate additional income, and prevent avoidable losses. More money alone doesn't guarantee a more profitable farm — knowing how to make every naira work harder does.",
+  },
+  mistakes: {
+    totalValue: 65400,
+    screens: [
+      { header: "That's actually a great place to be.",
+        intro: "Every successful catfish farmer was once a beginner. The difference is some learned by making expensive mistakes, others learned the right way before those mistakes happened.",
+        question: "Which of these best describes you?",
+        options: ["I'm still planning my first pond","I've already stocked fish but I'm still learning","I've completed one production cycle","I've completed a few cycles but still don't feel confident"] },
+      { header: "If you could remove just ONE uncertainty before your next production cycle, what would it be?",
+        question: "",
+        options: ["Which fish species should I stock?","How many fish should I stock?","What feed should I buy?","How much feed will I need?","How do I avoid costly mistakes?","Honestly, I want to know all of it"] },
+    ],
+    bridge: { title: "🟦 Your Answers Point To One Thing…",
+      html: `<p>The difference between a beginner and an experienced farmer usually isn't working harder.</p>
+<p>It's <strong>knowing exactly what to do before problems become expensive.</strong></p>
+<p>That's why experienced farmers often look calm. Not because nothing goes wrong. But because they've seen the situation before.</p>
+<p>👇 On the next page we'll show you the four areas every farmer should become confident in first.</p>` },
+    halfSolution: { title: "🌱 Want To Avoid Costly Mistakes On Your Catfish Farm?",
+      html: `<p>If you're just starting, or you're only in your first or second production cycle, it's normal to feel like you're one mistake away from losing money. Every decision feels important. And sometimes it feels like experienced farmers know something you don't. The truth is, the difference isn't as big as many people think.</p>
+<h3>The Biggest Difference Between A New Farmer And An Experienced Farmer Is One Word… Certainty.</h3>
+<p>An experienced farmer isn't guessing. He knows what to do. He knows what not to do. And because he's more certain, he usually makes fewer expensive mistakes. <strong>The good news? That certainty can be learned.</strong> And on almost every catfish farm, it comes from becoming confident in a handful of important areas.</p>
+<h3>Here Are The Four Areas Every Farmer Should Build Confidence In</h3>
+<h3>🐟 Your Fish</h3>
+<p>Knowing which species best suits your target harvest size, how to recognize healthy fingerlings or juveniles, and what signs suggest your fish are developing well. <strong>Starting with the right fish often saves months of frustration later.</strong></p>
+<h3>💧 Your Water</h3>
+<p>Your fish spend their entire lives in water. Understanding how many fish your pond can comfortably support, what changes can stress your fish, and when and how to change water <strong>helps you avoid many problems before they become expensive.</strong></p>
+<h3>🌾 Your Feed</h3>
+<p>Feed is your biggest investment. Knowing which feed brands give good value, how much to feed, and when to move from one pellet size to the next <strong>can make a noticeable difference to both growth and profitability.</strong></p>
+<h3>🛡️ Your Biosecurity</h3>
+<p>Disease is much easier to prevent than to recover from. Simple routines and knowing how to respond quickly when something goes wrong can protect the money you've already invested in your farm.</p>
+<h3>But Here's What Most New Farmers Still Don't Have…</h3>
+<p>Knowing what matters is only the beginning. The real confidence comes from knowing things like:</p>
+<ul><li>Exactly how many fish your pond should hold</li><li>Exactly how many bags of each feed size you'll need</li><li>Exactly when to change water</li><li>Exactly how often to feed</li><li>Exactly what to do when fish become sick</li><li>Exactly how to sell your fish profitably when harvest comes</li></ul>
+<p>Those are the details that remove guesswork from your farm.</p>
+<p><strong>Over the years, we've found that this is where many new farmers struggle most. They understand the basics, but they're still left asking, "Am I actually doing this the right way?"</strong></p>
+<p><strong>That's why we put together a practical programme that brings those answers together in one place, so farmers can spend less time guessing and more time making confident decisions.</strong></p>
+<h3>Inside the 3-Day Sabii Farm Protection &amp; Profit Programme, you'll receive:</h3>
+<p>Step-by-step guidance, practical reference guides you can keep using, and live training designed to help you build confidence before small mistakes become expensive ones.</p>
+<p>Because the goal isn't to know everything. <strong>It's to know the right thing to do when it matters most.</strong></p>` },
+    offerModules: [
+      { icon:"📘", number:1, key:"farmMastery", title:"Farm Level Mastery Guide", subtitle:"The Complete Blueprint for Getting Your Farm Right From Day One", value:15000,
+        bullets:["Which species of catfish to stock based on the size and type of harvest you're aiming for","Exactly how many fish your pond should hold — tarpaulin, concrete or plastic tank","Exactly how many bags of every feed size (2mm-9mm) you'll need from stocking to harvest","The best-performing feed brands for every stage of growth","Exactly how many times to feed every day, and the best times to feed","Exactly when and how to change water","The key water quality checks every farmer should understand","The important records every farmer should keep from the very beginning"],
+        note:"Instead of learning through expensive mistakes, you'll start with a practical system you can follow from your very first stocking.",
+        bridge:"Once your farm is built on the right foundation, the next step is making sure it becomes profitable. That's why you'll also receive…" },
+      { icon:"💰", number:2, key:"buyerMastery", title:"Buyer & Sales Mastery Guide", subtitle:"How to Make More Money From Every Harvest", value:20000,
+        bullets:["How to find buyers paying ₦100-200 more per kilogram","How to reduce dependence on middlemen","How to build repeat buyers","Additional income opportunities around your farm"],
+        note:"Because building a farm is one thing. Building a profitable farm is another.",
+        bridge:"And because every farmer eventually faces disease, you'll also receive…" },
+      { icon:"🛡️", number:3, key:"fishSaver", title:"The Fish Saver System", subtitle:"Your Disease Treatment & Emergency Response Guide", value:5400,
+        bullets:["How to identify the major catfish diseases","Exactly what treatment to use","The correct dosage for your pond","What to do within the first 24 hours","How to know whether your treatment is working"],
+        note:"No panic. No trial and error. No unnecessary losses." },
+    ],
+    modules: [["Farm Level Mastery Guide",15000],["Buyer & Sales Mastery Guide",20000],["Fish Saver System",5400],["5 Practical eBooks",15000],["Lifetime Community + Live Q&A",10000]],
+    close: "Every farmer pays for experience. The only difference is how. Some pay by making costly mistakes on their own farm. Others invest a small amount to learn from people who've already made those mistakes.",
+  },
+};
+
+const ENTRY_OPTIONS = [
+  { label: "My fish keep dying.", branch: "dying" },
+  { label: "My fish are not growing well.", branch: "growth" },
+  { label: "Feed is costing me too much.", branch: "feed" },
+  { label: "Buyers are not paying enough for my fish.", branch: "buyers" },
+  { label: "I know what to do. I just need more capital.", branch: "capital" },
+  { label: "My farm just isn't growing.", branch: "routing" },
+  { label: "I don't want costly mistakes holding my farm back.", branch: "mistakes" },
+];
+
+const ROUTING = {
+  step1: {
+    header: "Let's figure out what's really holding your farm back.",
+    question: "Which statement best describes your situation today?",
+    options: [
+      { label: "✅ I don't think my fish are performing the way they should yet.", next: "step2a" },
+      { label: "✅ My fish already perform well. I just need more capital to expand.", next: "step2b" },
+    ],
+  },
+  step2a: {
+    header: "Based on your answer, here's where we'd focus first…",
+    question: "Which part of raising the fish worries you the most?",
+    options: [
+      { label: "Fish deaths", branch: "dying" },
+      { label: "Slow growth", branch: "growth" },
+      { label: "Feeding", branch: "feed" },
+      { label: "Water management", branch: "growth" },
+      { label: "Knowing if I'm doing things correctly", branch: "growth" },
+    ],
+  },
+  step2b: {
+    header: "Based on your answer, here's where we'd focus first…",
+    question: "Where do you think you're losing the biggest financial opportunity today?",
+    options: [
+      { label: "I don't have enough capital", branch: "capital" },
+      { label: "Buyers don't pay enough", branch: "buyers" },
+      { label: "Feed costs are eating my profit", branch: "feed" },
+      { label: "I honestly think it's a combination", branch: "capital" },
+    ],
+  },
+};
+
+// ---------------------------------------------------------------------------
+// State
+// ---------------------------------------------------------------------------
+const state = {
+  phase: "hero",     // hero -> entry -> (routing1/routing2) -> diag -> half -> longform
+  branchKey: null,
+  screenIndex: 0,
+  totalSteps: 1,
+  stepCount: 0,
+  orderCode: null,
+  ctaFired: false,
+  navStack: [{ type: "hero" }],
+};
+
+// ---------------------------------------------------------------------------
+// DOM refs
+// ---------------------------------------------------------------------------
+const quizWrap = document.getElementById("quiz-wrap");
+const quizCard = document.getElementById("quiz-card");
+const heroEl = document.getElementById("screen-hero");
+const progressFill = document.getElementById("progress-fill");
+const longform = document.getElementById("longform");
+const stickyBar = document.getElementById("sticky-bar");
+const overlay = document.getElementById("overlay");
+
+document.getElementById("start-btn").addEventListener("click", () => {
+  heroEl.style.display = "none";
+  quizWrap.style.display = "block";
+  renderEntry(false);
+});
+
+function updateProgress(step, total) {
+  const pct = Math.min(100, Math.round((step / total) * 100));
+  progressFill.style.width = pct + "%";
+}
+
+function optionButton(label, onClick) {
+  const b = document.createElement("button");
+  b.className = "opt-btn";
+  b.textContent = label;
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+// ---------------------------------------------------------------------------
+// Navigation history — lets every quiz screen offer a "Back" button without
+// each screen needing to know how it got there.
+// ---------------------------------------------------------------------------
+function pushScreen(desc) {
+  state.navStack.push(desc);
+}
+
+function screenTopbar() {
+  const row = document.createElement("div");
+  row.className = "screen-topbar";
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "back-btn";
+  btn.innerHTML = "← Back";
+  btn.addEventListener("click", goBack);
+  row.appendChild(btn);
+  return row;
+}
+
+function goBack() {
+  if (state.navStack.length <= 1) return; // already at hero, nothing before it
+  state.navStack.pop(); // drop the current screen
+  const prev = state.navStack[state.navStack.length - 1];
+  if (prev.type === "hero") {
+    quizWrap.style.display = "none";
+    heroEl.style.display = "block";
+    return;
+  }
+  if (prev.type === "entry") {
+    renderEntry(true);
+  } else if (prev.type === "routing") {
+    renderRouting(prev.step, true);
+  } else if (prev.type === "routingBridge") {
+    renderRoutingBridge(prev.branch, true);
+  } else if (prev.type === "diag") {
+    state.branchKey = prev.branch;
+    state.screenIndex = prev.index;
+    state.totalSteps = BRANCHES[prev.branch].screens.length + 2; // + bridge + half-solution
+    state.stepCount = prev.index; // renderDiagScreen increments this itself
+    renderDiagScreen(true);
+  } else if (prev.type === "bridge") {
+    state.branchKey = prev.branch;
+    state.totalSteps = BRANCHES[prev.branch].screens.length + 2;
+    state.stepCount = state.totalSteps - 2; // renderBridge increments this itself
+    renderBridge(true);
+  } else if (prev.type === "half") {
+    state.branchKey = prev.branch;
+    state.totalSteps = BRANCHES[prev.branch].screens.length + 2;
+    state.stepCount = state.totalSteps - 1; // renderHalfSolution increments this itself
+    renderHalfSolution(true);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Entry screen
+// ---------------------------------------------------------------------------
+function renderEntry(isBack) {
+  if (!isBack) pushScreen({ type: "entry" });
+  state.phase = "entry";
+  updateProgress(0, 10);
+  quizCard.innerHTML = "";
+  quizCard.appendChild(screenTopbar());
+  const kicker = document.createElement("div");
+  kicker.className = "kicker";
+  kicker.textContent = "Question 1";
+  const h2 = document.createElement("h2");
+  h2.textContent = "Which of these sounds most like your biggest problem right now?";
+  const opts = document.createElement("div");
+  opts.className = "options";
+  ENTRY_OPTIONS.forEach((o) => {
+    opts.appendChild(optionButton(o.label, () => {
+      if (o.branch === "routing") {
+        renderRouting("step1", false);
+      } else {
+        startBranch(o.branch);
+      }
+    }));
+  });
+  quizCard.appendChild(kicker);
+  quizCard.appendChild(h2);
+  quizCard.appendChild(opts);
+}
+
+// ---------------------------------------------------------------------------
+// Routing branch (ambiguous "farm just isn't growing")
+// ---------------------------------------------------------------------------
+function renderRouting(stepKey, isBack) {
+  if (!isBack) pushScreen({ type: "routing", step: stepKey });
+  state.phase = "routing";
+  updateProgress(1, 10);
+  const step = ROUTING[stepKey];
+  quizCard.innerHTML = "";
+  quizCard.appendChild(screenTopbar());
+  const kicker = document.createElement("div");
+  kicker.className = "kicker";
+  kicker.textContent = "Question " + (stepKey === "step1" ? 2 : 3);
+  const h2 = document.createElement("h2");
+  h2.textContent = step.header + (step.question ? " " + step.question : "");
+  const opts = document.createElement("div");
+  opts.className = "options";
+  step.options.forEach((o) => {
+    opts.appendChild(optionButton(o.label, () => {
+      if (o.next) {
+        renderRouting(o.next, false);
+      } else {
+        renderRoutingBridge(o.branch, false);
+      }
+    }));
+  });
+  quizCard.appendChild(kicker);
+  quizCard.appendChild(h2);
+  quizCard.appendChild(opts);
+}
+
+const ROUTING_BRIDGE = { title: "🟦 Your Answers Point To One Thing…",
+  html: `<p>From your answers, your farm doesn't necessarily need more effort.</p>
+<p>It probably needs <strong>clarity.</strong></p>
+<p>Some farms stop growing because the fish aren't performing. Others stop growing because the business side isn't producing enough money.</p>
+<p>The good news is that once you know which one is holding you back, you know where to focus.</p>
+<p>👇 Let's show you the next step.</p>` };
+
+function renderRoutingBridge(chosenBranch, isBack) {
+  if (!isBack) pushScreen({ type: "routingBridge", branch: chosenBranch });
+  state.phase = "routingBridge";
+  updateProgress(3, 10);
+  quizCard.innerHTML = "";
+  quizCard.classList.remove("aha-card");
+  quizCard.classList.add("note-card", "bridge-card");
+  quizCard.appendChild(screenTopbar());
+  const h2 = document.createElement("h2");
+  h2.textContent = ROUTING_BRIDGE.title;
+  const body = document.createElement("div");
+  body.className = "note-body";
+  body.innerHTML = ROUTING_BRIDGE.html;
+  const row = document.createElement("div");
+  row.className = "continue-row";
+  const btn = document.createElement("button");
+  btn.className = "btn";
+  btn.textContent = "Continue →";
+  btn.addEventListener("click", () => startBranch(chosenBranch));
+  row.appendChild(btn);
+  quizCard.appendChild(h2);
+  quizCard.appendChild(body);
+  quizCard.appendChild(row);
+}
+
+// ---------------------------------------------------------------------------
+// Diagnostic screens for a chosen branch
+// ---------------------------------------------------------------------------
+function startBranch(branchKey) {
+  state.branchKey = branchKey;
+  state.screenIndex = 0;
+  state.phase = "diag";
+  const b = BRANCHES[branchKey];
+  state.totalSteps = b.screens.length + 2; // + bridge + half-solution
+  state.stepCount = 0;
+  renderDiagScreen(false);
+}
+
+function renderDiagScreen(isBack) {
+  if (!isBack) pushScreen({ type: "diag", branch: state.branchKey, index: state.screenIndex });
+  const b = BRANCHES[state.branchKey];
+  const s = b.screens[state.screenIndex];
+  state.stepCount++;
+  updateProgress(state.stepCount, state.totalSteps);
+  quizCard.innerHTML = "";
+  quizCard.classList.remove("aha-card", "note-card", "bridge-card");
+  quizCard.appendChild(screenTopbar());
+  const kicker = document.createElement("div");
+  kicker.className = "kicker";
+  kicker.textContent = "Question " + state.stepCount + " of " + state.totalSteps;
+  const h2 = document.createElement("h2");
+  h2.textContent = s.header;
+  quizCard.appendChild(kicker);
+  quizCard.appendChild(h2);
+  if (s.intro) {
+    const p = document.createElement("p");
+    p.className = "body-copy";
+    p.textContent = s.intro;
+    quizCard.appendChild(p);
+  }
+  if (s.question) {
+    const q = document.createElement("h2");
+    q.style.fontSize = "17px";
+    q.textContent = s.question;
+    quizCard.appendChild(q);
+  }
+  const opts = document.createElement("div");
+  opts.className = "options";
+  s.options.forEach((label) => {
+    opts.appendChild(optionButton(label, () => {
+      if (state.screenIndex < b.screens.length - 1) {
+        state.screenIndex++;
+        renderDiagScreen(false);
+      } else {
+        renderBridge(false);
+      }
+    }));
+  });
+  quizCard.appendChild(opts);
+}
+
+// The "diagnosis bridge" screen sits between the last diagnostic question and
+// the half-solution lesson. Its only job is to interpret what the farmer's
+// answers mean ("Based on what you've told us...") before teaching anything —
+// that reinterpretation is what creates the "maybe there really is something
+// here" moment, rather than jumping straight from questions to a lesson.
+function renderBridge(isBack) {
+  if (!isBack) pushScreen({ type: "bridge", branch: state.branchKey });
+  state.phase = "bridge";
+  state.stepCount++;
+  updateProgress(state.stepCount, state.totalSteps);
+  const b = BRANCHES[state.branchKey];
+  quizCard.innerHTML = "";
+  quizCard.classList.remove("aha-card");
+  quizCard.classList.add("note-card", "bridge-card");
+  quizCard.appendChild(screenTopbar());
+  const h2 = document.createElement("h2");
+  h2.textContent = b.bridge.title;
+  const body = document.createElement("div");
+  body.className = "note-body";
+  body.innerHTML = b.bridge.html;
+  const row = document.createElement("div");
+  row.className = "continue-row";
+  const btn = document.createElement("button");
+  btn.className = "btn";
+  btn.textContent = "Continue →";
+  btn.addEventListener("click", () => renderHalfSolution(false));
+  row.appendChild(btn);
+  quizCard.appendChild(h2);
+  quizCard.appendChild(body);
+  quizCard.appendChild(row);
+}
+
+// The "half-solution" screen replaces the old Aha + Permission pair: one
+// longer educational note that genuinely teaches something, then bridges
+// straight into the offer with a single "Continue" action — no multiple
+// choice here, since the point is to create one earned realization, not
+// collect another answer.
+function renderHalfSolution(isBack) {
+  if (!isBack) pushScreen({ type: "half", branch: state.branchKey });
+  state.phase = "halfSolution";
+  state.stepCount++;
+  updateProgress(state.stepCount, state.totalSteps);
+  const b = BRANCHES[state.branchKey];
+  quizCard.innerHTML = "";
+  quizCard.classList.remove("aha-card");
+  quizCard.classList.add("note-card");
+  quizCard.appendChild(screenTopbar());
+  const h2 = document.createElement("h2");
+  h2.textContent = b.halfSolution.title;
+  const body = document.createElement("div");
+  body.className = "note-body";
+  body.innerHTML = b.halfSolution.html;
+  const row = document.createElement("div");
+  row.className = "continue-row";
+  const btn = document.createElement("button");
+  btn.className = "btn";
+  btn.textContent = "See Everything You'll Receive →";
+  btn.addEventListener("click", enterLongform);
+  row.appendChild(btn);
+  quizCard.appendChild(h2);
+  quizCard.appendChild(body);
+  quizCard.appendChild(row);
+}
+
+// ---------------------------------------------------------------------------
+// Longform (Offer -> Proof -> Testimonials -> Guarantee -> Price)
+// ---------------------------------------------------------------------------
+function money(n) {
+  return "₦" + n.toLocaleString("en-NG");
+}
+
+function renderOfferModules(offerModulesArr) {
+  const wrap = document.getElementById("offer-modules");
+  wrap.innerHTML = offerModulesArr.map((m) => {
+    const bulletsHtml = m.bullets.map((t) => "<li>" + t + "</li>").join("");
+    const noteHtml = m.note ? '<p class="module-note">' + m.note + "</p>" : "";
+    const bridgeHtml = m.bridge ? '<p class="module-bridge">' + m.bridge + "</p>" : "";
+    return (
+      '<div class="module-card">' +
+        '<div class="module-head"><h3>' + m.icon + " " + m.title + '</h3>' +
+        '<span class="module-value">Value: ' + money(m.value) + "</span></div>" +
+        '<p class="module-subtitle">' + m.subtitle + "</p>" +
+        '<p class="module-intro">During the live training and inside your guide, you\u2019ll learn:</p>' +
+        '<ul class="bullets">' + bulletsHtml + "</ul>" +
+        noteHtml +
+      "</div>" + bridgeHtml
+    );
+  }).join("");
+}
+
+// ---------------------------------------------------------------------------
+// Proof section images. Each preview is tagged with the offer "key" it
+// backs up (matching the keys on BRANCHES[x].offerModules) so it can be
+// re-ordered per branch to follow the same sequence as that branch's offer.
+// subOrder breaks ties between previews that share the same key.
+// ---------------------------------------------------------------------------
+function cld(url, width) {
+  // Auto format + auto quality + capped width + automatic device-pixel-ratio.
+  // This is what keeps preview media small and fast without visible quality loss.
+  return url.replace("/upload/", "/upload/f_auto,q_auto,w_" + (width || 640) + ",dpr_auto/");
+}
+
+function cldFull(url) {
+  // Higher-resolution version fetched only when the visitor actually taps
+  // to zoom — the base page never pays for this extra weight.
+  return url.replace("/upload/", "/upload/f_auto,q_auto,w_1400/");
+}
+
+function cldVideoThumb(videoUrl, width) {
+  // Cloudinary can hand back a still frame from a video by requesting the
+  // same public ID with an image extension — used as a fast-loading poster
+  // so the actual video file is never fetched until the visitor taps play.
+  return videoUrl
+    .replace("/upload/", "/upload/so_1,f_auto,q_auto,w_" + (width || 640) + "/")
+    .replace(/\.mp4(\?|$)/, ".jpg$1");
+}
+
+const PROOF_ITEMS = [
+  { id: "stockingDensity", key: "farmMastery", subOrder: 0, tag: "📏 ACTUAL PAGE FROM THE STOCKING DENSITY GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741644/Stocking_Density_mqfamw.jpg",
+    title: "Stock The Right Number Of Fish For Your Pond",
+    body: "See exactly how stocking density is worked out, so you avoid overcrowding — or leaving money on the table by under-stocking." },
+  { id: "feedQty", key: "farmMastery", subOrder: 1, tag: "📦 ACTUAL PAGE FROM THE FEED QUANTITY GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741657/Feed_Qty_ikcdfa.jpg",
+    title: "Know Exactly How Much Feed To Buy",
+    body: "No more guessing — learn the exact feed sizes and bag quantities needed from stocking to harvest." },
+  { id: "feedTimes", key: "farmMastery", subOrder: 2, tag: "🕒 ACTUAL PAGE FROM THE FEEDING SCHEDULE GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741680/Feed_Times_hwtc2t.jpg",
+    title: "Feed At The Right Time, Every Time",
+    body: "See how feeding schedules are organized to help farmers feed more efficiently as their fish grow." },
+  { id: "hitting1kg", key: "farmMastery", subOrder: 3, tag: "🐟 ACTUAL PAGE FROM THE \u201cHITTING 1KG IN UNDER 5 MONTHS\u201d GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784833622/Satiation_Feeding_copy_xmovvg.jpg",
+    title: "Stop Wasting Feed",
+    body: "Learn the feeding approach that helps reduce unnecessary feed waste while supporting healthy growth." },
+  { id: "feedCost", key: "feedProfit", subOrder: 0, tag: "💰 ACTUAL PAGE FROM THE FEED COST GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741668/Cut_Feed_Cost_oug2lq.jpg",
+    title: "The Principles Behind Lower Feed Costs — and Making Your Own Feed",
+    body: "A page introducing the practical cost-saving principles taught during the live program. Complete feed formulation is taught separately in our advanced program." },
+  { id: "fishSaver", key: "fishSaver", subOrder: 0, tag: "🛡 ACTUAL PAGE FROM THE FISH SAVER SYSTEM",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741698/Biosecurity_pgnsmh.jpg",
+    title: "Stop Disease Before It Starts",
+    body: "Learn the treatment practices that help stop disease outbreaks before they cost you fish and money." },
+  { id: "fishSales", key: "buyerMastery", subOrder: 0, tag: "💵 ACTUAL PAGE FROM THE FISH SALES GUIDE",
+    imgRaw: "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784741631/Fish_Sales_xjjbia.jpg",
+    title: "Find Better Buyers",
+    body: "A preview of the systems taught to help you reach buyers willing to pay more for quality fish." },
+];
+
+// A branch's offer sometimes covers a topic (e.g. buyer-finding, inside
+// capital's "grow your farm" module) without a standalone module of that
+// key — this lets the matching preview still slot in at the right spot.
+const KEY_EQUIVALENTS = { buyerMastery: "growCapital" };
+
+// Explicit preview order overrides, for branches where the natural
+// key-based order isn't quite the requested sequence.
+const PROOF_ORDER_OVERRIDES = {
+  feed: ["feedQty", "feedTimes", "feedCost", "hitting1kg", "stockingDensity", "fishSales", "fishSaver"],
+};
+
+function branchKeyOrder(branch, key) {
+  let idx = branch.offerModules.findIndex((m) => m.key === key);
+  if (idx === -1 && KEY_EQUIVALENTS[key]) {
+    idx = branch.offerModules.findIndex((m) => m.key === KEY_EQUIVALENTS[key]);
+  }
+  return idx === -1 ? branch.offerModules.length : idx;
+}
+
+// ---------------------------------------------------------------------------
+// Lightbox (tap-to-zoom viewer), shared by proof previews and testimonial
+// photos. Opens the higher-resolution version on demand and disables the
+// usual save/drag affordances as a reasonable download deterrent.
+// ---------------------------------------------------------------------------
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+function openLightbox(fullSrc, alt) {
+  lightboxImg.src = fullSrc;
+  lightboxImg.alt = alt || "";
+  lightboxImg.classList.remove("zoomed");
+  lightbox.classList.add("open");
+}
+function closeLightbox() {
+  lightbox.classList.remove("open");
+  lightboxImg.src = "";
+}
+document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+lightboxImg.addEventListener("click", () => {
+  lightboxImg.classList.toggle("zoomed");
+});
+
+function zoomableImgHtml(rawUrl, alt, extraClass) {
+  const thumb = cld(rawUrl);
+  const full = cldFull(rawUrl);
+  return (
+    '<img class="zoomable-img' + (extraClass ? " " + extraClass : "") + '" src="' + thumb + '" ' +
+    'alt="' + alt + '" loading="lazy" decoding="async" draggable="false" oncontextmenu="return false" ' +
+    'data-full="' + full + '">'
+  );
+}
+
+function wireZoomableImages(container) {
+  container.querySelectorAll(".zoomable-img").forEach((img) => {
+    img.addEventListener("click", () => openLightbox(img.getAttribute("data-full"), img.alt));
+  });
+}
+
+function renderProofItems(branch, branchKey) {
+  const override = PROOF_ORDER_OVERRIDES[branchKey];
+  const ordered = override
+    ? override.map((id) => PROOF_ITEMS.find((p) => p.id === id)).filter(Boolean)
+    : PROOF_ITEMS.slice().sort((a, b2) => {
+        const ai = branchKeyOrder(branch, a.key);
+        const bi = branchKeyOrder(branch, b2.key);
+        if (ai !== bi) return ai - bi;
+        return a.subOrder - b2.subOrder;
+      });
+  const wrap = document.getElementById("proof-items");
+  wrap.innerHTML = ordered.map((p) => {
+    const media = p.imgRaw
+      ? zoomableImgHtml(p.imgRaw, p.title)
+      : '<div class="proof-img-placeholder">[ Guide page image ]</div>';
+    return (
+      '<div class="proof-item">' +
+        '<div class="proof-tag">' + p.tag + "</div>" +
+        media +
+        "<h3>" + p.title + "</h3>" +
+        "<p>" + p.body + "</p>" +
+      "</div>"
+    );
+  }).join("");
+  wireZoomableImages(wrap);
+}
+
+// ---------------------------------------------------------------------------
+// Testimonial groups. Tagged with the same offer "key" system as the proof
+// images, so the group order follows each branch's own offer sequence —
+// e.g. the "fish keep dying" branch (fishSaver -> farmMastery -> buyerMastery)
+// shows Healthier Fish first, then Better Farm Management, then More Confidence.
+// Videos load only a poster frame up front; the clip itself is fetched only
+// once the visitor taps play.
+// ---------------------------------------------------------------------------
+const TESTI_GROUPS = [
+  { key: "fishSaver", label: "Healthier Fish",
+    firstText: "For many farms, it starts with healthier fish — protect that, and everything else becomes easier to build on.",
+    nextText: "Small improvements on the farm often become big improvements at harvest.",
+    videos: [
+      "https://res.cloudinary.com/dmcurkcnk/video/upload/v1782623957/Fatima_Test_x33cg0.mp4",
+      "https://res.cloudinary.com/dmcurkcnk/video/upload/v1782625208/Hatchery_Before_and_After_ac2mby.mp4",
+    ] },
+  { key: "farmMastery", label: "Better Farm Management",
+    firstText: "For many farmers, it starts with getting the everyday management of the farm right.",
+    nextText: "One good decision rarely stands alone. It usually leads to many more.",
+    images: [
+      "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784872176/Confidence_Testimonial_vpmqkz.jpg",
+      "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784873221/Confidence_Testimonial2_yydvz3.jpg",
+      "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784872178/Confidence_Testimonial3_u3glr8.jpg",
+    ] },
+  { key: "buyerMastery", label: "More Confidence",
+    firstText: "Every successful farm starts with knowing what to do next.",
+    nextText: "And that confidence only grows — every harvest gets a little more predictable than the last.",
+    images: [
+      "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784872175/Testimonial_Fatima_copy_lvgthl.jpg",
+      "https://res.cloudinary.com/dmcurkcnk/image/upload/v1784872180/Testimonial_Fatima_2_tw10mp.jpg",
+    ] },
+];
+
+function renderTestimonials(branch) {
+  const ordered = TESTI_GROUPS.slice().sort((a, b2) => {
+    return branchKeyOrder(branch, a.key) - branchKeyOrder(branch, b2.key);
+  });
+  const wrap = document.getElementById("testi-groups");
+  wrap.innerHTML = ordered.map((group, i) => {
+    let cardsHtml = "";
+    if (group.videos) {
+      cardsHtml = group.videos.map((videoUrl, idx) => {
+        const poster = cldVideoThumb(videoUrl);
+        return (
+          '<div class="testi-media-card">' +
+            '<div class="testi-video-label">🎥 Real Farmer Video</div>' +
+            '<div class="video-thumb" data-video="' + videoUrl + '" role="button" tabindex="0" aria-label="Play video">' +
+              '<img class="video-poster" src="' + poster + '" alt="Watch this farmer\u2019s story" loading="lazy" decoding="async" draggable="false" oncontextmenu="return false">' +
+              '<div class="play-btn">▶</div>' +
+            "</div>" +
+          "</div>"
+        );
+      }).join("");
+    } else if (group.images) {
+      cardsHtml = group.images.map((imgUrl) => (
+        '<div class="testi-media-card">' +
+          zoomableImgHtml(imgUrl, group.label + " — real farmer testimonial") +
+        "</div>"
+      )).join("");
+    }
+    const resetLine = i === 0
+      ? '<div class="testi-reset-line">' + group.firstText + "</div>"
+      : (i === 1 ? '<div class="testi-reset-line">' + group.nextText + "</div>" : "");
+    return (
+      '<div class="testi-group-label">' + group.label + "</div>" +
+      cardsHtml +
+      resetLine
+    );
+  }).join("") +
+    '<p class="testi-reset-line">Every farmer applies the lessons differently, but the goal is always the same\u2014building a more profitable farm.</p>' +
+    '<p class="testi-closing">These are only a few of the farmers who\u2019ve learned with us.<br>Now we\u2019d like the opportunity to help you do the same.</p>';
+  wireZoomableImages(wrap);
+  wrap.querySelectorAll(".video-thumb").forEach((thumb) => {
+    const playVideo = () => {
+      const videoUrl = thumb.getAttribute("data-video");
+      const video = document.createElement("video");
+      video.className = "testi-video-active";
+      video.src = videoUrl;
+      video.controls = true;
+      video.playsInline = true;
+      video.setAttribute("controlsList", "nodownload noremoteplayback");
+      video.disablePictureInPicture = true;
+      video.oncontextmenu = () => false;
+      thumb.replaceWith(video);
+      video.play().catch(() => {});
+    };
+    thumb.addEventListener("click", playVideo);
+    thumb.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); playVideo(); }
+    });
+  });
+}
+
+function enterLongform() {
+  quizWrap.style.display = "none";
+  longform.style.display = "block";
+  window.scrollTo({ top: 0, behavior: "auto" });
+
+  const b = BRANCHES[state.branchKey];
+
+  // Full per-branch module stack (offer page)
+  renderOfferModules(b.offerModules);
+
+  // Preview images, reordered to match this branch's offer sequence
+  renderProofItems(b, state.branchKey);
+
+  // Testimonial groups, reordered to match this branch's offer sequence
+  renderTestimonials(b);
+
+  // Price table (lives on page 2, next to checkout)
+  const table = document.getElementById("offer-price-table");
+  table.innerHTML = "";
+  b.modules.forEach(([name, value]) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = "<td>" + name + "</td><td>" + money(value) + "</td>";
+    table.appendChild(tr);
+  });
+  const totalTr = document.createElement("tr");
+  totalTr.className = "total";
+  totalTr.innerHTML = "<td>Total Value</td><td>" + money(b.totalValue) + "</td>";
+  table.appendChild(totalTr);
+
+  // Close quote
+  document.getElementById("offer-close").textContent = b.close;
+
+  // Price page dynamic total value
+  document.getElementById("price-total-value").textContent = money(b.totalValue);
+
+  // Generate order code + send lead
+  ensureOrderCode();
+  sendLead();
+}
+
+// ---------------------------------------------------------------------------
+// Order code + tracking
+// ---------------------------------------------------------------------------
+function ensureOrderCode() {
+  if (state.orderCode) return state.orderCode;
+  const now = new Date();
+  const yy = String(now.getFullYear()).slice(2);
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  const rand = Math.random().toString(36).slice(2, 7).toUpperCase();
+  state.orderCode = "SFPPS-" + yy + mm + dd + "-" + rand;
+  return state.orderCode;
+}
+
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : "";
+}
+
+function sendLead() {
+  if (!WORKER_BASE || WORKER_BASE.indexOf("YOUR_SUBDOMAIN") !== -1) return;
+  fetch(WORKER_BASE + "/lead", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      orderCode: state.orderCode,
+      branch: state.branchKey,
+      fbp: getCookie("_fbp"),
+      fbc: getCookie("_fbc"),
+      userAgent: navigator.userAgent,
+      sourceUrl: window.location.href,
+      referrer: document.referrer,
+    }),
+  }).catch(() => {});
+}
+
+function fireInitiateCheckout() {
+  if (state.ctaFired) return;
+  state.ctaFired = true;
+  const orderCode = ensureOrderCode();
+
+  if (typeof fbq === "function") {
+    fbq("track", "InitiateCheckout", { value: 5400, currency: "NGN" }, { eventID: orderCode });
+  }
+
+  if (WORKER_BASE && WORKER_BASE.indexOf("YOUR_SUBDOMAIN") === -1) {
+    fetch(WORKER_BASE + "/capi", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        orderCode,
+        branch: state.branchKey,
+        fbp: getCookie("_fbp"),
+        fbc: getCookie("_fbc"),
+        userAgent: navigator.userAgent,
+        sourceUrl: window.location.href,
+      }),
+    }).catch(() => {});
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CTA buttons + confirmation overlay + WhatsApp handoff
+// ---------------------------------------------------------------------------
+function handleBookSlot() {
+  fireInitiateCheckout();
+  overlay.style.display = "flex";
+}
+
+document.getElementById("cta-price").addEventListener("click", handleBookSlot);
+document.getElementById("cta-sticky").addEventListener("click", handleBookSlot);
+
+// ---------------------------------------------------------------------------
+// Page 1 (Offer + Preview) -> Page 2 (Testimonials + Guarantee + Price)
+// ---------------------------------------------------------------------------
+const longformPage1 = document.getElementById("longform-page1");
+const longformPage2 = document.getElementById("longform-page2");
+
+document.getElementById("cta-to-page2").addEventListener("click", () => {
+  longformPage1.style.display = "none";
+  longformPage2.style.display = "block";
+  window.scrollTo({ top: 0, behavior: "auto" });
+  // Moving on to testimonials/guarantee/price always means the visitor has
+  // already passed the end of the offer section — keep the sticky bar up.
+  stickyBar.style.display = "block";
+});
+
+// ---------------------------------------------------------------------------
+// Sticky checkout bar: hidden until the visitor scrolls past the end of the
+// offer section (page 1), then stays visible through testimonials, the
+// guarantee and the price section — including after moving on to page 2 —
+// and only disappears again if they scroll back above that point while
+// still on page 1.
+// ---------------------------------------------------------------------------
+const offerEndMarker = document.getElementById("cta-to-page2");
+const stickyObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (longformPage1.style.display === "none") return; // already on page 2 — leave sticky bar as is
+    if (entry.isIntersecting) {
+      stickyBar.style.display = "none";
+    } else if (entry.boundingClientRect.top < 0) {
+      stickyBar.style.display = "block";
+    } else {
+      stickyBar.style.display = "none";
+    }
+  });
+}, { threshold: 0 });
+stickyObserver.observe(offerEndMarker);
+
+document.getElementById("overlay-cancel").addEventListener("click", (e) => {
+  e.preventDefault();
+  overlay.style.display = "none";
+});
+
+document.getElementById("overlay-confirm").addEventListener("click", () => {
+  const orderCode = ensureOrderCode();
+  const message = "Hello Sabii Farms,\n\n" +
+    "I'd like to register for the Sabii Farm Protection & Profit Shield 3-Day Live Programme for \u20A65,400.\n\n" +
+    "I'd like to secure my slot for this weekend's programme.\n\n" +
+    "--------------------------------\n\n" +
+    "\uD83D\uDCCC Registration Reference:\n" + orderCode + "\n\n" +
+    "Kindly do not delete or edit this reference code, as it helps us confirm and secure your registration for this programme.\n\n" +
+    "Thank you.";
+  const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  overlay.style.display = "none";
+  window.location.href = url;
+});
+
+// ---------------------------------------------------------------------------
+// Bank details copy-to-clipboard
+// ---------------------------------------------------------------------------
+document.getElementById("copy-acct").addEventListener("click", async (e) => {
+  const btn = e.currentTarget;
+  const text = document.getElementById("acct-number").textContent;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+  }
+  btn.textContent = "Copied!";
+  btn.classList.add("copied");
+  setTimeout(() => { btn.textContent = "Copy"; btn.classList.remove("copied"); }, 2000);
+});
+</script>
+
+</body>
+</html>
